@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pembayaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="input.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Form Pembayaran Baju</legend>
+        <p>
+          <img
+            src="Belakang.jpg"
+            alt="Arsana"
+            style="width: 270px; border-radius: 10px"
+          />
+        </p>
+        <p>
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Alamat Email Anda"
+            required
+          />
+        </p>
+        <p>
+          <label for="Nama Lengkap">Nama Lengkap</label>
+          <input
+            type="text"
+            name="nama_lengkap"
+            id="nama_lengkap"
+            placeholder="Nama Lengkap Anda"
+            required
+          />
+        </p>
+        <p>
+          <label for="NIM">NIM</label>
+          <input
+            type="type"
+            name="nim"
+            placeholder="Nomor Induk Mahasiswa"
+            required
+          />
+        </p>
+        <p>
+          <label for="Jenis Kelamin">Jenis Kelamin</label>
+          <input type="radio" name="gender" value="Laki-laki" />Laki-laki <br />
+          <input
+            type="radio"
+            name="gender"
+            value="Perempuan"
+            required
+          />Perempuan
+        </p>
+        <p>
+          <label for="Kelas">Kelas</label>
+          <input type="radio" name="class" value="SI '22" />SI '22 <br />
+          <input type="radio" name="class" value="A" />A <br />
+          <input type="radio" name="class" value="B" />B <br />
+          <input type="radio" name="class" value="C" required />C
+        </p>
+        <p>
+          <label for="Metode Pembayaran">Metode Pembayaran</label>
+          <input type="radio" name="pembayaran" value="Bank BNI" /> Bank BNI
+          1478237642 (Fadhil Haikal) <br />
+          <input type="radio" name="pembayaran" value="DANA" required /> DANA
+          088179346263 (Fadhil Haikal)
+        </p>
+        <p>
+          <label for="Bukti Pembayaran">Bukti Pembayaran</label>
+          <input type="file" name="bukti_pembayaran" id="bukti_pembayaran" />
+        </p>
+        <p>
+          <input type="submit" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
